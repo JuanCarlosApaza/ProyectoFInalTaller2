@@ -1,0 +1,7 @@
+- hosts: servidores
+  become: true  # Asegúrate de que esta línea esté incluida
+  vars_files:
+    - variables.yml
+  roles:
+    - apache
+    - samba
